@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg" 
+    android:paddingTop="100dip">
+    
+    <!-- auto check switch -->
+    <LinearLayout 
+        android:layout_width="700dip"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone">
+        <TextView 
+            android:id="@+id/txt_auto_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_check" 
+            android:textSize="24dp" 
+            android:gravity="center" />
+        <Switch 
+            android:id="@+id/swh_auto_check" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+     </LinearLayout>
+    
+    <!-- tip text -->
+    <LinearLayout 
+        android:layout_width="680dip"
+        android:layout_height="280dip"
+        android:orientation="vertical" 
+        android:background="@drawable/bg_text"
+        android:layout_gravity="center_horizontal">
+        
+        <TextView 
+            android:id="@+id/text_ota_avalibe"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dip"
+	        android:layout_marginLeft="5dip"
+	        android:text="@string/str_ota_new"
+	        android:textSize="28dip"
+	        android:textColor="#FFFFFF"/>
+        <TextView 
+            android:id="@+id/text_ota_ver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="@string/str_ota_version"
+            android:textSize="28dip"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"/>
+        <TextView 
+            android:id="@+id/text_ota_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="@string/str_ota_size"
+            android:textSize="28dip"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"/>
+    </LinearLayout>
+    
+    <!-- check button -->
+	<LinearLayout 
+	    android:layout_width="120dip"
+	    android:layout_height="28dip" 
+	    android:layout_gravity="center_horizontal"
+	    android:visibility="gone">
+		<Button
+		    android:id="@+id/btn_check_now" 
+		    android:layout_width="match_parent"	
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:text="@string/check_now"
+		    android:textSize="12dp"
+		    android:textColor="#FFFFFF"
+		    android:background="@drawable/button_state" />
+	</LinearLayout>
+	
+	<!-- update/process/exit button -->
+	<LinearLayout 
+        android:layout_width="680dip"
+        android:layout_height="180dip"
+        android:orientation="horizontal" 
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical">
+        <Button
+            android:id="@+id/btn_download" 
+            android:layout_width="180dip" 
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="@string/str_download"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" 
+            android:background="@drawable/button_state"/>
+        <ImageButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_marginLeft="90dip"
+            android:layout_marginRight="90dip"
+            android:background="@drawable/process"
+            android:visibility="invisible"/>
+        
+        <Button
+            android:id="@+id/btn_exit" 
+            android:layout_width="180dip" 
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dip"
+            android:text="@string/str_exit"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:background="@drawable/button_state" />
+    </LinearLayout>
+    
+</LinearLayout>
