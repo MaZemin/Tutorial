@@ -43,7 +43,6 @@ public class KtcOtaRequest implements CusOtaRequestInterface{
         }
     }
     
-    
     public KtcOtaRequest(){
     	try {
 			mRemoteURI = new URI(getRemoteUri());
@@ -61,7 +60,7 @@ public class KtcOtaRequest implements CusOtaRequestInterface{
     } 
     
     public static String getRemoteHost() {
-    	String remoteHost = SystemProperties.get("update.ktc.cn:3300");			//("ro.product.ota.host");
+    	String remoteHost = SystemProperties.get("ro.product.ota.host");
     	if(remoteHost == null || remoteHost.length() == 0) {
     		remoteHost = "update.ktc.cn:3300";	//"172.16.9.24:3300";
     	}
@@ -93,16 +92,14 @@ public class KtcOtaRequest implements CusOtaRequestInterface{
     	if(serial.contains(" ")) {
     		serial = serial.replaceAll(" ", "");
     	}
-    	if(serial == null || serial.length() == 0) {
-    		serial = "MSTAR20160908";
-    	}
+    	
     	return serial;
     }   
     
     public static String getSystemVersion() {
     	String version = SystemProperties.get("ro.product.version");
     	if(version == null || version.length() == 0) {
-    		version = "V1.0.0";
+    		version = "1.0.0";
     	}
     	
     	return version;
@@ -110,12 +107,6 @@ public class KtcOtaRequest implements CusOtaRequestInterface{
 	
 	
 	public  int requestRemoteServerForUpdate() throws IOException, ClientProtocolException {
-/*		try {
-			mRemoteURI = new URI("http://update.ktc.cn:3300/otaservlet?product=TV628_T2&serial=SDA1231231231230000&version=V1.0.1");
-		} catch (URISyntaxException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}*/
     	HttpClient httpClient = CustomerHttpClient.getHttpClient();
     	HttpHead httpHead = new HttpHead(mRemoteURI); 
     	Log.v(TAG, "mRemoteURI=" + mRemoteURI); 

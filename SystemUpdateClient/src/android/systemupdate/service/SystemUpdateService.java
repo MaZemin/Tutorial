@@ -517,7 +517,6 @@ public class SystemUpdateService extends Service {
 	                					SystemProperties.set("persist.sys.ota.available", "true");
 	                					int count = mOtaTip.getInt("count", 0);
 	                					if(count < 3){
-								    	Log.v(TAG, "[shawn]----mCusOtaRequest.startUpdate true");				
 		                					mCusOtaRequest.startUpdate(mContext, true);
 		                					Editor e = mOtaTip.edit();
 		                					count++;
@@ -525,8 +524,7 @@ public class SystemUpdateService extends Service {
 		                					e.commit();
 	                					}
 	                				}else{
-								    	Log.v(TAG, "[shawn]----mCusOtaRequest.startUpdate failure");		// shawn 201617 check in here			                				
-	                					mCusOtaRequest.startUpdate(mContext, true);			// shawn 20160617 change to true for test 
+	                					mCusOtaRequest.startUpdate(mContext, false);
 	                				}
 	                				break;
 	                			case CusOtaRequestInterface.SYSTEM_NEW:

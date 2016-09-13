@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifast>
+<product name="TV818" info="null">
+<serial name="SDA123456789018" info="null" curr_version="V4.0.0" full_package_path="null" update_level="uncritical">
+        <version name="V3.0.0" package_length="204818394" package_name="full_mustek-ota-1.0.0.zip" package_path="http://ktctest.oss-cn-hangzhou.aliyuncs.com/kgkj%2F6A818%2FSDA123456789018%2FV3.0.0_V4.0.0%2Ffull_mustek-ota-1.0.0.zip"/>
+    </serial>
+</product>
+<product name="TV828" info="null">
+<serial name="SDA123456789019" info="null" curr_version="V3.0.0" full_package_path="null" update_level="uncritical">
+        <version name="V2.0.0" package_length="313442304" package_name="V3.0.0.zip" package_path="packages\TV828\SDA123456789019\V3.0.0\V3.0.0.zip"/>
+    </serial>
+</product>
+<product name="TV628" info="null">
+    <serial name="SDA15100314" info="null" curr_version="V4.0.1" full_package_path="null" update_level="uncritical">
+        <version name="V4.0.0" package_length="210227716" package_name="v4.0.0-v4.0.1.zip" package_path="http://ktcota.oss-cn-shenzhen.aliyuncs.com/philips%2F6A628_DTMB%2FSDA15100314%2Fv4.0.0-v4.0.1.zip"/>
+    </serial>
+    
+    <serial name="SDA16010203" info="null" curr_version="V2.0.1" full_package_path="null" update_level="uncritical">
+        <version name="V2.0.0" package_length="201734535" package_name="v2.0.0-v2.0.1.zip" package_path="http://ktcota.oss-cn-shenzhen.aliyuncs.com/tcl%2F6a628%2FSDA16010203%2Fv2.0.0-v2.0.1%2Fv2.0.0-v2.0.1.zip"/>
+    </serial>
+</product>
+
+<product name="CX5C" info="null">
+<serial name="SDA0020151020" info="null" curr_version="V3.0.1" full_package_path="null" update_level="uncritical">
+        <version name="V3.0.0" package_length="225630405 " package_name="v3.0.0-v3.0.1.zip" package_path="http://ktcota.oss-cn-shenzhen.aliyuncs.com/panasonic%2Fv3.0.0-v3.0.1.zip"/>
+    </serial>
+</product>
+<product name="TV628_T2" info="null">
+    <serial name="SDA1231231231230000" info="null" curr_version="V2.0.2" full_package_path="null" update_level="uncritical">
+        <version name="V1.0.1" package_length="193652513" package_name="update.zip" package_path="http://ktctest.oss-cn-hangzhou.aliyuncs.com/horion%2F6a628_t2%2FSDA1231231231230000%2Fupdate.zip"/> 
+   </serial>
+</product>
+ <product name="TV828" info="null">
+ <serial name="SDA123456789091" info="null" curr_version="V4.0.0" full_package_path="null" update_level="uncritical">
+  <version name="V3.0.0" package_length="374962591" package_name="update_signed.zip" package_path="https://yqall02.baidupcs.com/file/a461ec67bcc02342d1c1df655e6bf0de?bkt=p3-0000dfe2e9dc6f2e1456ba18e860a4f4e71a&fid=1528252578-250528-609720405260058&time=1473410553&sign=FDTAXGERLBH-DCb740ccc5511e5e8fedcff06b081203-Eom9ssRUeJFZi1XTchN9GPq8mk8%3D&to=yqhb&fm=Yan,B,U,t&sta_dx=374962591&sta_cs=&sta_ft=zip&sta_ct=0&sta_mt=0&fm2=Yangquan,B,U,t&newver=1&newfm=1&secfm=1&flow_ver=3&pkey=0000dfe2e9dc6f2e1456ba18e860a4f4e71a&sl=75956300&expires=8h&rt=sh&r=824077640&mlogid=5860738861958331465&vuk=1528252578&vbdid=592724045&fin=update_signed.zip&fn=update_signed.zip&slt=pm&uta=0&rtype=1&iv=0&isw=0&dp-logid=5860738861958331465&dp-callid=0.1.1&hps=1&csl=600&csign=fuU%2BNm5BWRdBcnP4hN6DaL6pXJU%3D"/> 
+  </serial>
+ </product> 
+</manifast>
+

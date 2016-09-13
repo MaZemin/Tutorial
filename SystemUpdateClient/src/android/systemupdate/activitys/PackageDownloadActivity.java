@@ -104,7 +104,20 @@ public class PackageDownloadActivity extends Activity {
 		
 		mFileName = intent.getStringExtra("OtaPackageName");
 		mImgVer = intent.getStringExtra("OtaPackageVersion");
-		mImgSize = intent.getStringExtra("PackageSize");
+		mImgSize = intent.getStringExtra("OtaPackageLength");
+        String packageSize_string = null;
+        if (mImgSize != null){
+            long packageSize = Long.valueOf(mImgSize);            
+            if(packageSize < 1024) {
+        	    packageSize_string = String.valueOf(packageSize) + "B";
+            }else if(packageSize/1024 > 0 && packageSize/1024/1024 == 0) {
+        	    packageSize_string = String.valueOf(packageSize/1024) + "K";
+            }else if(packageSize/1024/1024 > 0) {
+        	    packageSize_string = String.valueOf(packageSize/1024/1024) + "M";
+            }
+        } else {
+        	packageSize_string = null;
+        }
         //not finish activity
         PackageManager pm = getPackageManager();  
         homeInfo = pm.resolveActivity(new Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_HOME), 0);
@@ -125,7 +138,7 @@ public class PackageDownloadActivity extends Activity {
         mText_ver = (TextView)this.findViewById(R.id.text_ota_ver);
         mText_size = (TextView)this.findViewById(R.id.text_ota_size);
         mText_ver.setText(mText_ver.getText() + mImgVer);
-        mText_size.setText(mText_size.getText() + mImgSize);
+        mText_size.setText(mText_size.getText() + packageSize_string);
         //mTxtState = (TextView)findViewById(R.id.txt_state);
         
         //mTxtState.setText("");       

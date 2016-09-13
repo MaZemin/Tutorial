@@ -14,7 +14,8 @@ public interface CusOtaRequestInterface {
 	public final static int SYSTEM_NEW = 4;
 	public final static int URL_ERR = 5;
 	
-	public final static int REQUEST_NUM = 100;
+	
+	public final static int REQUEST_NUM = 30;
 	
 	public  int requestRemoteServerForUpdate() throws IOException, ClientProtocolException ;
 	public  void  startUpdate(Context contex) throws IOException, ClientProtocolException;	
